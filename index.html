@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- wapper  -->
+    <div class="w-[100vw] h-[100vh] flex flex-col justify-center place-items-center bg-[#153f42] gap-10"> 
+
+        <div class="text-[#d6d01c] font-bold text-[20px]">Increment And Decrement</div>
+
+        <div class="flex gap-12 bg-white text-[#344151] text-[25px] rounded-sm px-5 p-3">
+
+            <!-- '-' sign button -->
+            <button onclick="decrement()" class="border-r-2 border-[#bfbfbf] pr-5">
+                <i class="fa-solid fa-minus"></i>
+            </button>
+
+            <!--Text Div-->
+            <div id="counter" class="font-bold">
+               0 
+            </div>
+
+            <!-- '+' sign button -->
+            <Button onclick="increment()" class="border-l-2 border-[#bfbfbf] pl-5">
+                <i class="fa-solid fa-plus"></i>
+            </Button>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
